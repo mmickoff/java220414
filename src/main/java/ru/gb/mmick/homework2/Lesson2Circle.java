@@ -1,6 +1,6 @@
 package ru.gb.mmick.homework2;
 
-public class Lesson2 {
+public class Lesson2Circle {
     public static void main(String[] args) {
         double r1 = 2.1, r2 = 3.12;
         double s1 = calcSR(r1);
