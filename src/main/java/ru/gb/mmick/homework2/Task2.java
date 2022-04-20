@@ -31,7 +31,7 @@ public class Task2 {
     }
 
     public static void ptintWordN(String s, int n) { // создаём метод количества строк
-        for (int i = 1; i < n; i++) { // считаем, сколько раз напечатать строку
+        for (int i = 0; i < n; i++) { // считаем, сколько раз напечатать строку
             System.out.println(s); // печатаем строку
         }
     }
