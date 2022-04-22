@@ -4,7 +4,7 @@ package ru.gb.mmick.homework2;
 public class Task2 {
     public static void main(String[] args) { // точка входа
         System.out.println(within10and20(0, 12)); // метод пределов суммы
-        number1(5); //  метод проверки положительности числа
+        negativOrPozitiveNumber1(5); //  метод проверки положительности числа
         System.out.println(number2(5)); //
         String s = "Hello, world!"; // передаём значение ы в метод print1
         ptintWordN(s, 6); //
@@ -18,8 +18,8 @@ public class Task2 {
         return (sum >= 10 && sum <= 20); // получение подтверждения верности выражения true
     }
 
-    public static void number1(int x) { // метод полжительности числа
-        if (x < 0) { // формула определения отриц
+    public static void negativOrPozitiveNumber1(int x) { // метод полжительности числа
+        if (x < 0) { // формула определения отрицательности числа
             System.out.println(x + " - число отрицательное");
         } else { // иначе , если больше нуля
             System.out.println(x + " - число положительное");
