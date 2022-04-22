@@ -26,7 +26,7 @@ public class Task2 {
         }
     }
 
-    public static boolean number2(int y) { // метод подтверждения отрицтельности числа
+    public static boolean number2(int y) { // метод подтверждения отрицательности числа
         return (y < 0); // возврат тру, если число отрицательное, и подразумевает обратное
     }
 
@@ -35,7 +35,7 @@ public class Task2 {
             System.out.println(s); // печатаем строку
         }
     }
-    public static boolean leapYear(int y1) { //метод висококсность
+    public static boolean leapYear(int y1) { //метод високосность
         return (y1 % 4 == 0 & y1 % 100 != 0 | y1 % 400 == 0 );
         // формула определения високосности - если да, то тру, если нет, то подразумевает фолс
     }
