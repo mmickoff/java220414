@@ -1,6 +1,6 @@
 package ru.gb.mmick.homework3;
 
-public class Exp02_Massives01 {
+public class Exp02_Massives02 {
     public static void main(String[] args) {
         int[] a = new int[10];
         System.out.print("a[10] - { ");

@@ -1,6 +1,6 @@
 package ru.gb.mmick.homework3;
 
-public class Exp01_Massives00 {
+public class Exp01_Massives01 {
     public static void main(String[] args) {
         int[][] b = new int[3][4];
         b[2][0] = 3;
