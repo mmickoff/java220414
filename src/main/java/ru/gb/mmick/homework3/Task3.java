@@ -62,7 +62,7 @@ public class Task3 {
         for (i = 0; i < leng; i++) { // прохродим в начало строки
             System.out.println(); // переходим на сл.строку
             for (j = 0; j < leng; j++) { // проходим вдоль строк(и)
-                if (i == j || (leng - 1 - i) == j) { // просчитываем, яч.для единиц
+                if (i == j || (leng - 1 - i) == j) { // находим, яч.для единиц
                     System.out.print("  1");
                 } else {
                     System.out.printf( "  *"); //  "%2d", a[i][j]
