@@ -1,6 +1,6 @@
 package ru.gb.mmick.homework3;
 
-public class Exp04 {
+public class Exp04_massX6 {
 
     public static void main(String[] args) {
         massX6();
