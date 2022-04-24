@@ -1,12 +1,7 @@
 package ru.gb.mmick.homework3;
 
-public class Task3 {
+public class Exp02_Massives01 {
     public static void main(String[] args) {
-        massive01();
-    }
-
-
-    public static void massive01() {
         int[] a = new int[10];
         System.out.print("a[10] - { ");
         for (int i = 0; i < a.length; i++) {
@@ -20,6 +15,7 @@ public class Task3 {
             } else {
                 System.out.print(" ");
             }
+
         }
         System.out.print(" }");
     }
