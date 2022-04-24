@@ -1,10 +1,14 @@
 package ru.gb.mmick.homework3;
 
+import java.util.Arrays;
+
 public class Task3 {
     public static void main(String[] args) {
         massive01();
         System.out.println();
         massive100();
+        System.out.println();
+        massX6();
     }
 
 
@@ -26,13 +30,31 @@ public class Task3 {
         System.out.print(" }");
     }
 
+
     public static void massive100() {
         int[] b = new int[100];
         for (int i = 0; i < b.length; i++)
         {
             b[i] = i + 1;
-            System.out.print(b[i] + ", ");
         }
+        String s = Arrays.toString(b);
+        System.out.println(s);
     }
+
+
+    public static void massX6() {
+        int[] b = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        {
+            for (int i = 0; i < b.length; i++) {
+                if (b[i] < 6) {
+                    b[i] *= 6;
+                }
+            }
+        }
+        String s = Arrays.toString(b);
+        System.out.println(s);
+    }
+
+
 
 }
