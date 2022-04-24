@@ -1,6 +1,6 @@
 package ru.gb.mmick.homework3;
 
-public class Exp03_Massives03 {
+public class Exp03_Massives100 {
 
     public static void main(String[] args) {
         massive100();
