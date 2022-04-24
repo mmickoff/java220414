@@ -10,10 +10,9 @@ public class Task3 {
         massX6();
         initValue();
         massQuadDiagonal();
-
     }
 
-
+    // задача 1
     public static void massive01() {
         int[] a = new int[10];  // создаём пустой массив
         System.out.print("a[10] - ");  // ставим в начало наименование массива
@@ -28,7 +27,7 @@ public class Task3 {
         System.out.println(s);
     }
 
-
+    // задача 2
     public static void massive100() {
         int[] b = new int[100];  // создаём пустой массив на 100яч.
         for (int i = 0; i < b.length; i++) {  // проходим по массиву
@@ -38,7 +37,7 @@ public class Task3 {
         System.out.println(s);
     }
 
-
+    // задача 3
     public static void massX6() {
         int[] b = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};  // определяем массив
         {
@@ -52,24 +51,7 @@ public class Task3 {
         System.out.println(s);
     }
 
-
-    private static void initValue() {
-        Scanner sc = new Scanner(System.in); // создали сканер
-        System.out.print("Введите длину массива: "); // запрос длины строки
-        int len = sc.nextInt(); // вводим длину массива
-        System.out.print("Введите значение ячейки: "); // запрос знач.яч.
-        int initialValue = sc.nextInt(); // вводим значеник в ячейке
-        int i = len; // создаём переменную для длины строки
-        int[] d = new int[i]; // создаём массив
-        for (i = 0; i < len; i++) { // проходим по массиву
-            d[i] = initialValue; // присваиваем значения яч-м
-        }
-        String h = Arrays.toString(d); // печать в консоль
-        System.out.println(h);
-
-    }
-
-
+    // задача 4
     public static void massQuadDiagonal() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите длину стороны равностороннего массива: ");
@@ -85,9 +67,24 @@ public class Task3 {
                 } else {
                     System.out.printf( "  *"); //  "%2d", a[i][j]
                 }
-
             }
         }
+    }
+
+    // задача 5
+    private static void initValue() {
+        Scanner sc = new Scanner(System.in); // создали сканер
+        System.out.print("Введите длину массива: "); // запрос длины строки
+        int len = sc.nextInt(); // вводим длину массива
+        System.out.print("Введите значение ячейки: "); // запрос знач.яч.
+        int initialValue = sc.nextInt(); // вводим значеник в ячейке
+        int i = len; // создаём переменную для длины строки
+        int[] d = new int[i]; // создаём массив
+        for (i = 0; i < len; i++) { // проходим по массиву
+            d[i] = initialValue; // присваиваем значения яч-м
+        }
+        String h = Arrays.toString(d); // печать в консоль
+        System.out.println(h);
     }
 
 
