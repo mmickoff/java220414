@@ -9,7 +9,7 @@ public class Task3 {
         massive100();
         massX6();
         initValue();
-
+        massQuadDiagonal();
 
     }
 
@@ -24,7 +24,7 @@ public class Task3 {
                 a[i] = 0;  // присваиваем им 0
             }
         }
-        String s = Arrays.toString(a);
+        String s = Arrays.toString(a); // печать в консоль
         System.out.println(s);
     }
 
@@ -34,7 +34,7 @@ public class Task3 {
         for (int i = 0; i < b.length; i++) {  // проходим по массиву
             b[i] = i + 1;  // присваиваем ячейкам значения
         }
-        String s = Arrays.toString(b);
+        String s = Arrays.toString(b); // печать в консоль
         System.out.println(s);
     }
 
@@ -48,25 +48,47 @@ public class Task3 {
                 }
             }
         }
-        String s = Arrays.toString(b);
+        String s = Arrays.toString(b); // печать в консоль
         System.out.println(s);
     }
 
 
     private static void initValue() {
         Scanner sc = new Scanner(System.in); // создали сканер
-        System.out.print("Введите длину массива: ");
-        int len = sc.nextInt();
-        System.out.print("Введите значение ячейки: ");
-        int initialValue = sc.nextInt();
-        int i = len;
-        int[] d = new int[i];
-        for (i = 0; i < len; i++) {
-            d[i] = initialValue;
+        System.out.print("Введите длину массива: "); // запрос длины строки
+        int len = sc.nextInt(); // вводим длину массива
+        System.out.print("Введите значение ячейки: "); // запрос знач.яч.
+        int initialValue = sc.nextInt(); // вводим значеник в ячейке
+        int i = len; // создаём переменную для длины строки
+        int[] d = new int[i]; // создаём массив
+        for (i = 0; i < len; i++) { // проходим по массиву
+            d[i] = initialValue; // присваиваем значения яч-м
         }
-        String h = Arrays.toString(d);
+        String h = Arrays.toString(d); // печать в консоль
         System.out.println(h);
 
     }
+
+
+    public static void massQuadDiagonal() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Введите длину стороны равностороннего массива: ");
+        int leng = sc.nextInt(); // вводим длину строки
+        int i = leng; // задаём переменную, опред. длинну строки
+        int j = i; // приравниваем стороны массива
+        int[][] a = new int[i][j]; // задаём массив
+        for (i = 0; i < leng; i++) { // прохродим в начало строки
+            System.out.println(); // переходим на сл.строку
+            for (j = 0; j < leng; j++) { // проходим вдоль строк(и)
+                if (i == j || (leng - 1 - i) == j) { // просчитываем, яч.для единиц
+                    System.out.print("  1");
+                } else {
+                    System.out.printf( "  *"); //  "%2d", a[i][j]
+                }
+
+            }
+        }
+    }
+
 
 }
