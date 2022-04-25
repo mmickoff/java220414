@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 public class Task3 {
     public static void main(String[] args) {
-        massive01();
-        massive100();
-        massX6();
+        invertArray();
+        fillArray();
+        fillArray2();
         initValue();
-        massQuadDiagonal();
+        fillDiagonal();
         finMax(z);
         finMin(z);
     }
@@ -17,13 +17,13 @@ public class Task3 {
     // задача 1 - Задать целочисленный массив, состоящий из элементов 0 и 1.
     // Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
     // С помощью цикла и условия заменить 0 на 1, 1 на 0;
-    public static void massive01() {
+    public static void invertArray() {
         int[] a = new int[10];  // создаём пустой массив
         System.out.print("a[10] - ");  // ставим в начало наименование массива
         for (int i = 0; i < a.length; i++) {  // проходим по массиву циклом
-            if (i % 2 == 0) {  // определяем чётны ячейки
+            if (i % 2 == 0) {  // определяем ячейки с 0м
                 a[i] = 1;  // присваиваем им 1
-            } else {  // определяем нечётны ячейки
+            } else {  // определяем ячейки с 1й
                 a[i] = 0;  // присваиваем им 0
             }
         }
@@ -33,7 +33,7 @@ public class Task3 {
 
     // задача 2 - Задать пустой целочисленный массив длиной 100.
     // С помощью цикла заполнить его значениями 1 2 3 4 5 6 7 8 … 100;
-    public static void massive100() {
+public static void fillArray() {
         int[] b = new int[100];  // создаём пустой массив на 100яч.
         for (int i = 0; i < b.length; i++) {  // проходим по массиву
             b[i] = i + 1;  // присваиваем ячейкам значения
@@ -43,12 +43,12 @@ public class Task3 {
     }
 
     // задача 3 - Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2;
-    public static void massX6() {
+    public static void fillArray2() {
         int[] b = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};  // определяем массив
         {
             for (int i = 0; i < b.length; i++) {  // проходим циклом по массиву
                 if (b[i] < 6) {  // находим числа меньше 6
-                    b[i] *= 6;  // умножаем найденные числа на 6
+                    b[i] *= 2;  // умножаем найденные числа на 6
                 }
             }
         }
@@ -63,7 +63,7 @@ public class Task3 {
     // следующему принципу: индексы таких элементов равны,
     // то есть [0][0], [1][1], [2][2], …, [n][n];
 
-    public static void massQuadDiagonal() {
+    public static void fillDiagonal() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите длину стороны равностороннего массива: ");
         int leng = sc.nextInt(); // вводим длину строки
@@ -101,8 +101,7 @@ public class Task3 {
     }
 
     // задача 6* - Задать одномерный массив и найти в нем минимальный и максимальный элементы
-    private static int z[] = {8, 44, 6, -11, 4, 2, -8, 6, 29, 30, 34, 3, 6, -9};
-
+    public static int z[] = {8, 44, 6, -11, 4, 2, -8, 6, 29, 30, 34, 3, 6, -9};
     public static void finMax(int[] z) { // создаём метод потска максим.знач. с аргументом массив
         int max = z[0];
         for (int i = 0; i < z.length; i++) {
