@@ -126,7 +126,7 @@ public static void fillArray() {
 
 
     // Задача 7** -
-    public static void checkBalance() { //
+    public static boolean checkBalance() { //
         int[] k = {2, 5, 4, 4, 7, 8};
         int sum = 0;
         for (int i = 0; i < k.length; i++) {
@@ -138,9 +138,13 @@ public static void fillArray() {
             if (leftSum == sum / 2) {
             }
             System.out.println("true");
+            return true;
         }else{
             System.out.println("false");
+            return false;
         }
     }
+
+
 }
 
