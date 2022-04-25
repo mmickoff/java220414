@@ -7,22 +7,23 @@ public class Exp73_checkBalance2 {
         checkBalance();
     }
 
-    public static void checkBalance() {
-        int[] k = {8, 44, 6, -11, 8, 2, -8, 6, 29, 30, 34, 3, 6, -9};
+    public static void checkBalance() { //
+        int[] k = {2, 5, 4, 4, 7, 8};
         int sum = 0;
         for (int i = 0; i < k.length; i++) {
             sum = sum + k[i];
         }
         if (sum % 2 == 0) {
-            int sum2 = 0;
-            for (int i = 0; i < k.length; i++) {
-                while (sum2 <= sum / 2) {
-                    sum2 = sum2 + k[i];
+            int leftSum = 0;
+            for (int i = 0; i < k.length; i++);
+                if (leftSum == sum / 2) {
                 }
+                System.out.println("true");
+            }else{
+                System.out.println("false");
             }
-            String h = Arrays.toString(k); // печать в консоль
-            System.out.println("true" + k);
-
         }
     }
-}
+    // System.out.println("Good"); // return true;
+
+

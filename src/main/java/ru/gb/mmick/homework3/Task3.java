@@ -12,6 +12,7 @@ public class Task3 {
         fillDiagonal();
         finMax(z);
         finMin(z);
+        checkBalance();
     }
 
     // задача 1 - Задать целочисленный массив, состоящий из элементов 0 и 1.
@@ -22,9 +23,9 @@ public class Task3 {
         System.out.print("a[10] - ");  // ставим в начало наименование массива
         for (int i = 0; i < a.length; i++) {  // проходим по массиву циклом
             if (i % 2 == 0) {  // определяем ячейки с 0м
-                a[i] = 1;  // присваиваем им 1
+                a[i] = 1;  // присваиваем им 1.
             } else {  // определяем ячейки с 1й
-                a[i] = 0;  // присваиваем им 0
+                a[i] = 0;  // присваиваем им 0.
             }
         }
         String s = Arrays.toString(a); // печать в консоль
@@ -80,6 +81,7 @@ public static void fillArray() {
                 }
             }
         }
+        System.out.println();
     }
 
     // задача 5 - Написать метод, принимающий на вход два аргумента: len и initialValue,
@@ -124,5 +126,21 @@ public static void fillArray() {
 
 
     // Задача 7** -
-
+    public static void checkBalance() { //
+        int[] k = {2, 5, 4, 4, 7, 8};
+        int sum = 0;
+        for (int i = 0; i < k.length; i++) {
+            sum = sum + k[i];
+        }
+        if (sum % 2 == 0) {
+            int leftSum = 0;
+            for (int i = 0; i < k.length; i++);
+            if (leftSum == sum / 2) {
+            }
+            System.out.println("true");
+        }else{
+            System.out.println("false");
+        }
+    }
 }
+
