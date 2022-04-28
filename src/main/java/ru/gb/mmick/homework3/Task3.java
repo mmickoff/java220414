@@ -12,7 +12,7 @@ public class Task3 {
         fillDiagonal();
         finMax(z);
         finMin(z);
-        checkBalance();
+        checkBalance(new int[]{2, 5, 4, 4, 7, 7});
     }
 
     // задача 1 - Задать целочисленный массив, состоящий из элементов 0 и 1.
@@ -34,7 +34,7 @@ public class Task3 {
 
     // задача 2 - Задать пустой целочисленный массив длиной 100.
     // С помощью цикла заполнить его значениями 1 2 3 4 5 6 7 8 … 100;
-public static void fillArray() {
+    public static void fillArray() {
         int[] b = new int[100];  // создаём пустой массив на 100яч.
         for (int i = 0; i < b.length; i++) {  // проходим по массиву
             b[i] = i + 1;  // присваиваем ячейкам значения
@@ -104,6 +104,7 @@ public static void fillArray() {
 
     // задача 6* - Задать одномерный массив и найти в нем минимальный и максимальный элементы
     public static int z[] = {8, 44, 6, -11, 4, 2, -8, 6, 29, 30, 34, 3, 6, -9};
+
     public static void finMax(int[] z) { // создаём метод потска максим.знач. с аргументом массив
         int max = z[0];
         for (int i = 0; i < z.length; i++) {
@@ -126,20 +127,20 @@ public static void fillArray() {
 
 
     // Задача 7** -
-    public static boolean checkBalance() { //
-        int[] k = {2, 5, 4, 4, 7, 8};
+    public static boolean checkBalance(int[] k) { //;
         int sum = 0;
         for (int i = 0; i < k.length; i++) {
             sum = sum + k[i];
         }
         if (sum % 2 == 0) {
             int leftSum = 0;
-            for (int i = 0; i < k.length; i++);
-            if (leftSum == sum / 2) {
+            for (int i = 0; i < k.length; i++) {
+                if (leftSum == sum / 2) {
+                }
             }
             System.out.println("true");
             return true;
-        }else{
+        } else {
             System.out.println("false");
             return false;
         }
